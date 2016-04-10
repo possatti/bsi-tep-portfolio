@@ -1,0 +1,203 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil,portuguese]{babel}
+% define styles for code listings
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{listings}
+\lstdefinestyle{cpp}{
+    language=c++,%
+    basicstyle=\tt\small,
+    commentstyle=\color{Green},
+    keywordstyle=\color{blue},
+    stringstyle=\color{Orange},
+    keepspaces=true,
+    showstringspaces=false
+}
+\lstdefinestyle{java}{
+    language=java,%
+    basicstyle=\tt\small,
+    commentstyle=\color{Green},
+    keywordstyle=\color{blue},
+    stringstyle=\color{Orange},
+    keepspaces=true,
+    showstringspaces=false
+}
+% customize pdf document properties
+\usepackage[pdftex]{hyperref}
+\hypersetup{%
+  bookmarksopen=false,
+  colorlinks=true,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=blue
+}
+
+%------------------------------------------------------------------------------%
+\begin{document}
+
+\vspace*{\fill}
+
+\hrule
+\begin{center}
+\Huge
+\textsc{Portfólio de Introdução à Programação Competitiva}
+
+\medskip
+\Large
+Aluny Fulany de Tal\\
+\large
+\texttt{fulany@example.com}
+
+\bigskip
+
+Professores:\\
+\emph{Jefferson O. Andrade}\\
+\emph{Flávio S. Lamas de Souza}
+
+\bigskip
+
+\today
+\end{center}
+\hrule
+
+\vspace*{\fill}
+\thispagestyle{empty}
+
+\newpage
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+\newpage
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Introdução}
+
+\subsection{Começando: Super Fáceis}
+
+\subsubsection{UVa 10550 - Combination Lock}
+
+Foi codificado o cálculo do total de ângulos, exatamente como descrito
+no enunciado do problema.
+
+\lstinputlisting[style=cpp]{src/combination.cpp}
+
+\subsection{Começando: Fáceis}
+
+\subsection{Começando: Médios}
+
+\subsection{Problemas Ad Hoc}
+
+TBD
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Bibliotecas e Estruturas de Dados}
+
+\subsection{Estruturas de Dados Lineares}
+
+\subsection{Estruturas de Dados Não Lineares}
+
+\subsection{Bibliotecas Próprias: Grafos}
+
+\subsection{Bibliotecas Próprias: Conjuntos Disjuntos}
+
+\subsection{Bibliotecas Próprias: Árvores de Segmentos}
+
+\subsection{Bibliotecas Próprias: Árvores de Fenwick}
+
+TBD
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Paradigmas de Resolução de Problemas}
+
+\subsection{Pesquisa Completa}
+
+\subsection{Dividir e Conquistar}
+
+\subsection{Algoritmos Gulosos}
+
+\subsection{Programação Dinâmica}
+
+TBD
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Grafos}
+
+\subsection{Pesquisa em Grafos}
+
+\subsection{Arvore Geradora Mínima}
+
+\subsection{Caminho mais Curto de Origem Única}
+
+\subsection{Caminho mais Curto de Todos os Pares}
+
+\subsection{Fluxo em Rede}
+
+\subsection{Grafos Especiais}
+
+TBD
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Matemática}
+
+\subsection{Combinatória}
+
+\subsection{Teoria dos Números}
+
+\subsection{Probabilidade}
+
+\subsection{Identificação de Ciclos}
+
+\subsection{Teoria dos Jogos}
+
+TBD
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Processamento de Strings}
+
+\subsection{Correspondência de String}
+
+\subsection{Processamento de Strings com Programação Dinâmica}
+
+\subsection{Suffix Trie/Tree/Array}
+
+TBD
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Geometria Computacional}
+
+\subsection{Objetos Geométricos Básicos com Bibliotecas}
+
+\subsection{Algoritmos de Polígonos com Bibliotecas}
+
+TBD
+
+
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\section{Tópicos mais Avançados}
+
+\subsection{Técnicas mais Avançadas de Pesquisa}
+
+\subsection{Técnicas mais Avançadas de Programação Dinâmica}
+
+\subsection{Decomposição de Problemas}
+
+TBD
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% ispell-local-dictionary: "brasileiro"
+%%% TeX-master: t
+%%% End:
