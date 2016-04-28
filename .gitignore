@@ -1,1 +1,6 @@
+# pdflatex build
 build/
+
+# Source build and output files
+a.out
+output
