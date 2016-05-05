@@ -86,25 +86,25 @@ Professores:\\
 \section{Introdução}
 
 \subsection{Começando: Super Fáceis}
-
 \subsubsection{UVa 10550 - Combination Lock}
 Foi codificado o cálculo do total de ângulos, exatamente como descrito
 no enunciado do problema.
 \lstinputlisting[style=cpp]{src/combination.cpp}
 
 \subsection{Começando: Fáceis}
-
 \subsubsection{UVa 11799 - Horror Dash}
 Para cada caso de teste, eu construo um array com as velocidades das ``criaturas assustadoras''. E desse array, eu procuro qual é a maior velocidade. Essa deve ser a velocidade mínima do palhaço.
 \lstinputlisting[style=cpp]{src/uva11799-horror-dash/horror-dash.cpp}
 
 \subsection{Começando: Médios}
-
 \subsubsection{UVa 573 - The Snail}
 Eu fiz um loop para iterar cada dia, e o loop cálcula os valores que a lesma sobe e escorrega a cada dia, igual ao exemplo dado na descrição do problema.
 \lstinputlisting[style=cpp]{src/uva00573-the-snail/snail.cpp}
 
 \subsection{Problemas Ad Hoc}
+\subsubsection{UVa 10189 - Minesweeper}
+Eu li todo o campo minado para uma matriz condensada em uma array, para a qual eu tinha funções auxiliares para inserir e ler valores. Para resolver o problema em si, eu varri toda a matriz substituindo os campos vazios (`.') pela quantidade de minas (`*') ao redor. A substituição funciona da seguinte forma. Eu verifico se as coordenas adjacentes contém minas, e assim conto o número delas. Ao invés de evitar que a função leia fora das fronteiras do campo, eu fiz um pequeno truque na função que retorna o valor de uma casa (dado as coordenadas), ela retorna o caracter nulo quando uma coordenada está fora dos limites da matriz. Então, como a função que conta as minas adjacentes conta apenas as minas (`*'), ela ignora o caracter nulo, que é o caso em que uma leitura é feita fora dos limites do campo.
+\lstinputlisting[style=cpp]{src/uva10189-minesweeper/main.cpp}
 
 TBD
 
