@@ -42,6 +42,7 @@
   linkcolor=black,
   urlcolor=blue
 }
+\newcommand{\code}[1]{\texttt{#1}}
 
 %------------------------------------------------------------------------------%
 \begin{document}
@@ -117,6 +118,10 @@ Para cada caso de teste, eu li cada linha contando o número de espaços entre a
 \lstinputlisting[style=cpp]{src/uva00414-machined-surfaces/main.cpp}
 
 \subsection{Estruturas de Dados Não Lineares}
+\subsubsection{UVa 10226 - Hardwood Species}
+Eu li todas todos os nomes de árvores para um mapa (\code{map<string, int> tree\_map}) que guarda o nome da árvore e o número de vezes que ela aparece naquele caso de testes. Ao mesmo tempo, contei o número de árvores na variável \code{n\_trees}. Depois, iterei sobre o mapa, imprimindo o nome da árvore e sua porcentagem (calculada por: \code{iterator->second / n\_trees}).
+\lstinputlisting[style=cpp]{src/uva10226-hardwood-species/main.cpp}
+
 
 \subsection{Bibliotecas Próprias: Grafos}
 \subsubsection{UVa 00599 - The Forrest for the Trees}
