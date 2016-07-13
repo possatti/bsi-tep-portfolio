@@ -42,7 +42,8 @@
   linkcolor=black,
   urlcolor=blue
 }
-\newcommand{\code}[1]{\texttt{#1}}
+\definecolor{bg_code_color}{RGB}{225,225,225}
+\newcommand{\code}[1]{\texttt{\colorbox{bg_code_color}{#1}}}
 
 %------------------------------------------------------------------------------%
 \begin{document}
@@ -142,6 +143,9 @@ TBD
 \subsection{Pesquisa Completa}
 
 \subsection{Dividir e Conquistar}
+\subsubsection{UVa 10611 - Playboy Chimp}
+Após ler os dados, eu percorri o vetor de macacas (\code{chimps}) na ordem crescente, procurando por aquela que tivesse maior altura, mas fosse menor que o macaco. E percorri o mesmo vetor na ordem decrescente, procurando a macaca que tivesse a menor altura, mas que fosse maior que o macaco. Fiz essas duas iterações para cada um dos diferentes valores do vetor de alturas do macaco (\code{queries}).
+\lstinputlisting[style=cpp]{src/uva10611-playboy-chimp/main.cpp}
 
 \subsection{Algoritmos Gulosos}
 \subsubsection{UVa 10340 - All in All}
