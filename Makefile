@@ -12,10 +12,10 @@ build/portfolio.pdf: portfolio.tex
 compress: build/portfolio.pdf
 	-rm "Lucas Caetano possatti.zip"
 	all_cpp=`find src -name "*.cpp"`
-	all_in=`find src -name "sample*.in"`
-	all_out=`find src -name "sample*.out"`
+	#all_in=`find src -name "sample*.in"`
+	#all_out=`find src -name "sample*.out"`
 	cp build/portfolio.pdf .
-	zip "Lucas Caetano possatti.zip" "portfolio.tex" "portfolio.pdf" $$all_cpp $$all_in $$all_out
+	zip "Lucas Caetano possatti.zip" "portfolio.tex" "portfolio.pdf" $$all_cpp #$$all_in $$all_out
 	rm portfolio.pdf
 
 clean:
