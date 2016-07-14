@@ -4,3 +4,6 @@ build/
 # Source build and output files
 a.out
 output
+
+# Compressed file
+*.zip
